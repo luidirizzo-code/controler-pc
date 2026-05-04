@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/baseUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://192.168.0.10:5000"
+            android:inputType="textUri"
+            android:text="http://192.168.0.10:5000" />
+
+        <EditText
+            android:id="@+id/token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AGENT_TOKEN"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/alertText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mensagem de alerta"
+            android:text="Atenção: ação remota solicitada." />
+
+        <Button android:id="@+id/btnLock" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bloquear sessão" />
+        <Button android:id="@+id/btnAlert" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mostrar alerta" />
+        <Button android:id="@+id/btnBackup" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fazer backup" />
+        <Button android:id="@+id/btnClean" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Limpar pasta de teste" />
+        <Button android:id="@+id/btnRestart" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reiniciar PC" />
+        <Button android:id="@+id/btnShutdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Desligar PC" />
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Resposta aparecerá aqui" />
+
+    </LinearLayout>
+</ScrollView>
